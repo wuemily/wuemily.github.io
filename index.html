@@ -6,39 +6,40 @@
         <meta name="description" content="this is my website">
         <meta name="author" content="Emily Wu">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css_normalizer.css">
         <link rel="stylesheet" href="pagestyle.css">
     </head>
 
     <body>
         <div class="content">
-            <div class="sidebar-container">
-                <nav class="sidebar">
-                    <a href="index.html"> Home </a>
-                    <a href="projects.html"> Projects </a>
-                    <a href="contact.html"> Contact Me </a>
+            <div class="navbar-container">
+                <nav class="navbar">
+                    <nav class="emily">Emily Wu</nav> 
+                    <nav class="nav-buttons">
+                        <button onclick="window.location.href='index.html';">Home</button>
+                        <button onclick="window.location.href='projects.html';">Projects</button>
+                        <button onclick="window.location.href='contact.html';">Contact</button>
+                    </nav>
                 </nav>
             </div>
             
             <div class="main">
-                <h1> Emily Wu </h1> 
-
                 <img id="headshot" src="headshot.jpg" alt="Headshot" height="300" width="300">
-        
-                <p> Hello there! I'm a third year robotics and computer science student at the University of Michigan. </p>
-                <p> I'm passionate about using robotics and user-centered design to create innovative solutions, and I'm always interested in learning new things! </p>
                 
-                <p> Hello there! I'm a third year robotics and computer science student at the University of Michigan. </p>
-                <p> Hello there! I'm a third year robotics and computer science student at the University of Michigan. </p>
-                <p> Hello there! I'm a third year robotics and computer science student at the University of Michigan. </p>
-                <p> Hello there! I'm a third year robotics and computer science student at the University of Michigan. </p>
-                <p> Hello there! I'm a third year robotics and computer science student at the University of Michigan. </p>
-                <p> Hello there! I'm a third year robotics and computer science student at the University of Michigan. </p>
-                <p> Hello there! I'm a third year robotics and computer science student at the University of Michigan. </p>
-                <p> Hello there! I'm a third year robotics and computer science student at the University of Michigan. </p>
-                <p> Hello there! I'm a third year robotics and computer science student at the University of Michigan. </p>
-                <p> Hello there! I'm a third year robotics and computer science student at the University of Michigan. </p>
-                <p> Hello there! I'm a third year robotics and computer science student at the University of Michigan. </p>
+                <div class="main-text">
+                    <p>Hello there!</p>
+                    <p>I'm a third year robotics and computer science student at the University of Michigan. I'm passionate about using robotics and user-centered design to create innovative solutions, and I'm always interested in learning new things!</p>
+                    <p>Some projects I've worked on in the past include creating a self-balancing ballbot, collaborating on navigation solutions for my autonomous robot project team, and implementing a frontier exploration package for my internship at CERL.</p>
+                    <p>Speaking more about myself, I am from Northern Virginia; I love to read, bike, and crochet (though I am always trying new hobbies!). I also love meeting new people, so feel free to reach out!</p>
+                </div>
+
             </div>
         </div>
     </body>
 </html>
+
+<!-- <script>
+    function home_button() {
+
+    }
+</script> -->

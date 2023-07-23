@@ -6,17 +6,27 @@
         <meta name="description" content="this is the contact page">
         <meta name="author" content="Emily Wu">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css_normalizer.css">
         <link rel="stylesheet" href="pagestyle.css">
     </head>
 
     <body>
-        <a href="index.html"> Home </a>
-        <a href="projects.html"> Projects </a>
-        <a href="contact.html"> Contact Me </a>
-
-        <h1> Contact Me </h1> 
-        
-        <p> Email: emilyywu@umich.edu </p>
-
+        <div class="content">
+            <div class="navbar-container">
+                <nav class="navbar">
+                    <nav class="emily">Emily Wu</nav> 
+                    <nav class="nav-buttons">
+                        <button onclick="window.location.href='index.html';">Home</button>
+                        <button onclick="window.location.href='projects.html';">Projects</button>
+                        <button onclick="window.location.href='contact.html';">Contact</button>
+                    </nav>
+                </nav>
+            </div>
+            
+            <div class="main">
+                <p>Contact</p> 
+                <p>Email: emilyywu@umich.edu</p>
+            </div>
+        </div>
     </body>
 </html>

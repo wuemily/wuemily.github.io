@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300&display=swap');
 
 :root {
     /* CSS HEX */
-    --floral-white: #fffcf2ff;
+    --white: rgb(255, 255, 255);
     --mountbatten-pink: #ae82a3ff;
     --tea-green: #d0eca6ff;
     --cherry-blossom-pink: #ffb9ceff;
@@ -10,58 +10,90 @@
 }
 
 body {
-    background-color: var(--floral-white);
-    font-family: 'Roboto', sans-serif;
+    background-color: var(--white);
+    font-family: 'Noto Serif TC', serif;
     color: var(--dark-purple);
     margin: 0;
-}
-
-a {
-    margin-right: 10px;
-    font-size: 20px;
-    text-align: center;
-}
-
-h1 {
-    font-size: 45px;
-    margin-top: 25px;
-    margin-left: 20px;
-    text-align: center;
-}
-
-p {
-    font-size: 25px;
-    text-align: center;
 }
 
 .content {
     display: flex;
 }
 
-.sidebar-container {
+.navbar-container {
     background-color: var(--tea-green);
-    height: 100vh;
-    width: 15rem;
+    height: 9rem;
+    width: 100%;
     position: fixed;
 }
 
-.sidebar {
+.navbar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     padding: 3rem;
-    gap: 2rem;
-    white-space: nowrap;    
+    white-space: nowrap;
+    gap: 3rem;
+}
+
+/* my name */
+.emily {
+    font-size: 40px;
+    font-weight: 500;
+    text-shadow: 2px 2px 3px var(--dark-purple);
+}
+
+.nav-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 25px;
+}
+
+/* buttons */
+button {
+    border: none;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 20px;
+    color: grey;
+    background-color: transparent;
+    cursor: pointer;
+    height: 40px;
+}
+
+button:hover {
+    color: black;
 }
 
 .main {
-    margin-left: 15rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-top: 9rem;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* paragraph text */
+p {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
 }
 
 #headshot {
     display: block;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2rem;
 }
 
 #ballbot {

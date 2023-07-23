@@ -6,19 +6,30 @@
         <meta name="description" content="this is the projects page">
         <meta name="author" content="Emily Wu">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css_normalizer.css">
         <link rel="stylesheet" href="pagestyle.css">
     </head>
 
     <body>
-        <a href="index.html"> Home </a>
-        <a href="projects.html"> Projects </a>
-        <a href="contact.html"> Contact Me </a>
-
-        <h1> My Projects </h1> 
+        <div class="content">
+            <div class="navbar-container">
+                <nav class="navbar">
+                    <nav class="emily">Emily Wu</nav> 
+                    <nav class="nav-buttons">
+                        <button onclick="window.location.href='index.html';">Home</button>
+                        <button onclick="window.location.href='projects.html';">Projects</button>
+                        <button onclick="window.location.href='contact.html';">Contact</button>
+                    </nav>
+                </nav>
+            </div>
+            
+            <div class="main">
+                <h1> My Projects </h1> 
         
-        <p> Self Balancing Ball Bot </p>
+                <p> Self Balancing Ball Bot </p>
 
-        <img id="ballbot" src="ballbot_assembly.png" alt="ballbot assembly image" height="534" width="441">
-
+                <img id="ballbot" src="ballbot_assembly.png" alt="ballbot assembly image" height="534" width="441">
+            </div>
+        </div>
     </body>
 </html>
