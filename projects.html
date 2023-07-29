@@ -6,6 +6,7 @@
         <meta name="description" content="this is the projects page">
         <meta name="author" content="Emily Wu">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script.js"></script>
         <link rel="stylesheet" href="css_normalizer.css">
         <link rel="stylesheet" href="pagestyle.css">
     </head>
@@ -14,21 +15,44 @@
         <div class="content">
             <div class="navbar-container">
                 <nav class="navbar">
-                    <nav class="emily">Emily Wu</nav> 
+                    <nav class="emily">༝˚✧ <b>Emily Wu</b> ˚✧⁺</nav>
                     <nav class="nav-buttons">
                         <button onclick="window.location.href='index.html';">Home</button>
                         <button onclick="window.location.href='projects.html';">Projects</button>
-                        <button onclick="window.location.href='contact.html';">Contact</button>
+                        <button onclick="window.location.href='activities.html';">Activities</button>
                     </nav>
                 </nav>
             </div>
             
-            <div class="main">
-                <h1> My Projects </h1> 
+            <div class="projects-main">
+                <h2> My Projects </h2> 
         
-                <p> Self Balancing Ball Bot </p>
+                <div class="slideshow">
+                    <div class="mySlides fade">
+                        <img id="ballbot" src="ballbot_assembly.png" alt="ballbot assembly image" height="400" width="400">
+                        <p> Self balancing ballbot CAD</p>
+                    </div>
 
-                <img id="ballbot" src="ballbot_assembly.png" alt="ballbot assembly image" height="534" width="441">
+                    <div class="mySlides fade">
+                        <img id="ballbot" src="ballbot.jpg" alt="ballbot assembly image" height="400" width="400">
+                        <p> Me (left) and my partner with the ballbot </p>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img id="ballbot" src="umarv.jpg" alt="ballbot assembly image" height="400" width="400">
+                        <p> ARV robot at competition </p>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
             </div>
         </div>
     </body>

@@ -6,40 +6,83 @@
         <meta name="description" content="this is my website">
         <meta name="author" content="Emily Wu">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script.js"></script>
+        <link rel="icon" type="image/x-icon" href="shining.png" style="filter: brightness(0); filter: invert(1);">
         <link rel="stylesheet" href="css_normalizer.css">
         <link rel="stylesheet" href="pagestyle.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <style>
+            .material-symbols-outlined {
+              font-variation-settings:
+              'FILL' 0,
+              'wght' 400,
+              'GRAD' 0,
+              'opsz' 48
+            }
+        </style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <style>
+            .material-symbols-outlined {
+              font-variation-settings:
+              'FILL' 0,
+              'wght' 400,
+              'GRAD' 0,
+              'opsz' 48
+            }
+        </style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <style>
+            .material-symbols-outlined {
+              font-variation-settings:
+              'FILL' 0,
+              'wght' 400,
+              'GRAD' 0,
+              'opsz' 48
+            }
+            </style>
     </head>
 
     <body>
         <div class="content">
             <div class="navbar-container">
                 <nav class="navbar">
-                    <nav class="emily">Emily Wu</nav> 
+                    <!-- <nav class="emily">༝˚₊⋆｡✧˚ <b>Emily Wu</b> ˚✧⋆｡⁺‧</nav> -->
+                    <!-- <nav class="emily">✧✦ <b>Emily Wu</b> ✦✧</nav> -->
+                    <nav class="emily">༝˚✧ <b>Emily Wu</b> ˚✧⁺</nav>
                     <nav class="nav-buttons">
                         <button onclick="window.location.href='index.html';">Home</button>
                         <button onclick="window.location.href='projects.html';">Projects</button>
-                        <button onclick="window.location.href='contact.html';">Contact</button>
+                        <button onclick="window.location.href='activities.html';">Activities</button>
                     </nav>
                 </nav>
             </div>
             
             <div class="main">
-                <img id="headshot" src="headshot.jpg" alt="Headshot" height="300" width="300">
+                <div class="main-info">
+                    <img class="fade" id="headshot" src="headshot.jpg" alt="Headshot" height="300" width="300">
+                    <div class="email">
+                        <span class="material-symbols-outlined">mail</span>
+                        <p>emilyywu@umich.edu</p>
+                    </div>
+                    <div class="resume">
+                        <span class="material-symbols-outlined">description</span>
+                        <a class="resume-link" href="EMILY_WU_RESUME.pdf" style="text-decoration: none;">Resume</a>
+                    </div>
+                </div>
                 
                 <div class="main-text">
+                    <p>╭────────⋆〔❨<span class="eyes">✧</span>_<span class="eyes">✧</span>❩〕⋆────────╮</p>
+                    <!-- <p>( ○ ╹ 〰 ╹ ○ )</p> -->
+                    <!-- (◕‿-) -->
+                    <!-- ･֊･ -->
                     <p>Hello there!</p>
-                    <p>I'm a third year robotics and computer science student at the University of Michigan. I'm passionate about using robotics and user-centered design to create innovative solutions, and I'm always interested in learning new things!</p>
-                    <p>Some projects I've worked on in the past include creating a self-balancing ballbot, collaborating on navigation solutions for my autonomous robot project team, and implementing a frontier exploration package for my internship at CERL.</p>
-                    <p>Speaking more about myself, I am from Northern Virginia; I love to read, bike, and crochet (though I am always trying new hobbies!). I also love meeting new people, so feel free to reach out!</p>
+                    <p>I'm a third year robotics and computer science student at the <a class="bio-link" href="https://robotics.umich.edu/">University of Michigan</a>. I'm passionate about using robotics and user-centered design to help people, and I'm always interested in learning new things.</p>
+                    <p>Some projects I've worked on in the past include creating a self-balancing ballbot, collaborating on navigation solutions for my autonomous robot <a class="bio-link" href="https://www.umarv.com/">project team</a>, and implementing a frontier exploration package for my internship at <a class="bio-link" href="https://www.erdc.usace.army.mil/Locations/CERL/">CERL</a>.</p>
+                    <p>Speaking more about myself, I am from Northern Virginia; I love to read, bike, and crochet (though I am always trying new hobbies!); and I also love meeting new people, so feel free to reach out!</p>
+                    <p style="text-align: right;"><span class="material-symbols-outlined">favorite</span>Emily</p>
+                    <p>╰────────⋆〔❨<span class="eyes">✧</span>_<span class="eyes">✧</span>❩〕⋆────────╯</p>
                 </div>
-
             </div>
         </div>
     </body>
 </html>
-
-<!-- <script>
-    function home_button() {
-
-    }
-</script> -->
